@@ -1,0 +1,60 @@
+/* src/App.css */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+  overflow-y: auto;
+  background: linear-gradient(to bottom, #308df8, #9cf878); /* Colores inspirados en Pokémon */
+}
+
+.pokedex {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 16px;
+  width: 250px;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out;
+  box-sizing: border-box;
+  background-color: #fff; /* Fondo de las cartas */
+}
+
+.card:hover {
+  border: 2px solid #007bff;
+}
+
+.selected {
+  border: 2px solid #007bff;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.details {
+  margin-top: 10px;
+}
+
+.pokemon-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
